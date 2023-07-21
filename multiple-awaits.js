@@ -2,7 +2,6 @@ const superagent = require(`superagent`);
 
 const getValues = () => {
   const request1 = superagent.get('https://dog.ceo/api/breeds/image/random');
-  const request2 = superagent.get('https://dog.ceo/api/breeds/image/random');
   const request3 = superagent.get('https://dog.ceo/api/breeds/image/random');
   return Promise.all([request1, request2, request3]);
 }
